@@ -1,0 +1,74 @@
+.home-wrap header
+  width: 135px
+  background: $menu-bg-color
+  padding: 30px 0
+
+  .header-position
+    position: fixed
+    top: 30px
+    left: 0
+    bottom: 0
+    width: 135px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+
+  .logo
+
+    +hide-text
+    background:
+      image: url(/assets/img/logo.svg)
+      repeat: no-repeat
+      position: center
+      size: contain
+      height: 70px
+    min-height: 50px
+    padding: 0
+    margin: 0
+
+  .site-nav
+    ul.menu
+      list-style: none
+      text-transform: uppercase
+      margin: 20px 0
+      padding: 0
+      text-align: right
+
+
+      li
+        margin-bottom: 10px
+        &:last-child
+          margin-bottom: 50px
+
+        ul.submenu
+          margin: 0
+          padding: 0
+          text-align: right
+
+          li
+            margin-bottom: 0px
+            padding: 0
+            &:last-child
+              margin-bottom: 30px
+
+      h5
+        display: block
+        padding-right: 20px
+        margin: 0
+        transition: 0.6s ease
+        border-right: 10px solid transparent
+      h5::after
+        content: ""
+      h5:hover
+        border-right: 10px solid #58595b
+
+
+
+
+
+  .email-link
+    display: block
+    text-align: right
+    margin: 20px 0
+    padding: 0 20px 0 0
