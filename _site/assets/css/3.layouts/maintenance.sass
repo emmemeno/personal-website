@@ -1,0 +1,29 @@
+.maintenance-wrap
+  background: url(/assets/img/logo.svg) no-repeat center center fixed
+  background-size: cover
+  min-height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+
+.maintenance-section
+  position: relative
+  background:
+    color: transparentize(black, .5)
+  border: 1px solid black
+
+  h2
+    text-transform: uppercase
+    font-weight: 300
+    margin: 10rem 2rem
+    color: #ddd
+
+.maintenance-section::before
+  display: block
+  position: absolute
+  border: 3px solid black
+  content: " "
+  top: $doubleborder-distance
+  bottom: $doubleborder-distance
+  left: $doubleborder-distance
+  right: $doubleborder-distance

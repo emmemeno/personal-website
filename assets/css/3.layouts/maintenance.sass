@@ -1,0 +1,38 @@
+.maintenance-wrap
+  background: url(/assets/img/mant-bg.jpg) no-repeat center center fixed
+  background-size: cover
+  min-height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+
+.maintenance-section
+  position: relative
+  background:
+    color: transparentize($accent-border-color, .5)
+  border: 1px solid $accent-border-color
+  text-align: center
+
+  h2
+    text-transform: uppercase
+    font-size: 33px
+    font-weight: 300
+    margin: 8rem 2rem 0 2rem
+    color: #ddd
+
+  h3
+    text-transform: uppercase
+    font-size: 15px
+    font-weight: 300
+    margin: 0rem 2rem 8rem 2rem
+    color: #ddd
+
+.maintenance-section::before
+  display: block
+  position: absolute
+  border: 3px solid $accent-border-color
+  content: " "
+  top: $doubleborder-distance
+  bottom: $doubleborder-distance
+  left: $doubleborder-distance
+  right: $doubleborder-distance
